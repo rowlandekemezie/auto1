@@ -1,5 +1,7 @@
 # Auto1 Group Car catalogue with seemless filtering capability.
 
+![Auto screen](./src/static/auto1-screen.png)
+
 ### To run locally for development
 
 ```bash
@@ -24,9 +26,14 @@
 - Pagination
 - All functional components
 - Redux-saga as redux middleware
-- Unit tests: Components, Actions, Reducers, Sagas and store.
+- Use React Hooks
+- CSS-in-JSS for styling.
+- Unit tests: Components, Actions, Reducers, Sagas and store
 - Code splitting
 - Dynamic imports
+- Super fast page loadtime
 - Proper typechecking checking
+- Responsive UI
+- PWA support
 
 Made with ❤️ by @rowlandekemezie.

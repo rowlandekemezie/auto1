@@ -77,6 +77,11 @@ const SubTitle = styled("p")`
   font-weight: 500;
 `;
 
+const ErrorMessage = styled("p")`
+  text-align: center;
+  color: ${({ theme }) => theme.ORANGE};
+`;
+
 function DescriptionCard({ car }) {
   return (
     <Description>
@@ -95,11 +100,12 @@ function DescriptionCard({ car }) {
 }
 
 export function CarDetails({
-  fetchACar,
+  error,
   carId,
+  fetchACar,
+  collection,
   selectedCar,
-  saveCollection,
-  collection
+  saveCollection
 }) {
   const handleOnSave = () => saveCollection(selectedCar);
   const isSaved = collection.find(i => i.stockNumber === parseInt(carId));
@@ -125,6 +131,7 @@ export function CarDetails({
             />
           </SaveButtonWrapper>
         </CallToActionBox>
+        {error && <ErrorMessage>{error}</ErrorMessage>}
       </Main>
       <Footer />
     </Placeholder>
@@ -132,7 +139,7 @@ export function CarDetails({
 }
 
 const mapStateToProps = (
-  { cars: { selectedCar, isLoading, collection } },
+  { cars: { selectedCar, isLoading, collection, error } },
   ownParams
 ) => ({
   selectedCar,

@@ -10,11 +10,16 @@ import { renderOptions, buildQueryString } from "../../../utils";
 const Wrapper = styled("div")`
   display: flex;
   flex-direction: column;
-  width: 33.333%;
   margin-right: 24px;
   padding: 24px;
   border: 2px solid ${({ theme }) => theme.GRAY};
   height: 30%;
+  margin-right: 0;
+
+  @media (min-width: 768px) {
+    width: 33.333%;
+    margin-right: 24px;
+  }
 `;
 
 const FilterButtonWrapper = styled("div")`

@@ -30,15 +30,21 @@ const Main = styled("main")`
   }
 `;
 
+const ErrorMessage = styled("p")`
+  text-align: center;
+  color: ${({ theme }) => theme.ORANGE};
+`;
+
 export function Cars({
   cars,
-  totalPageCount,
+  error,
+  colors,
+  history,
   isLoading,
   fetchAllCars,
-  history,
-  fetchAllColors,
-  colors,
   manufacturers,
+  totalPageCount,
+  fetchAllColors,
   fetchAllManufacturers
 }) {
   const [page, setCurrentPage] = useState(initialPageNumber());
@@ -80,6 +86,7 @@ export function Cars({
           totalPageCount={totalPageCount}
           handleOnChange={e => setSort(e)}
         />
+        {error && <ErrorMessage>{error}</ErrorMessage>}
       </Main>
       <Footer />
     </Placeholder>
@@ -87,7 +94,7 @@ export function Cars({
 }
 
 const mapStateToProps = (
-  { cars: { cars, isLoading, totalPageCount }, manufacturers, colors },
+  { cars: { cars, isLoading, totalPageCount }, manufacturers, colors, error },
   ownParams
 ) => ({
   cars,

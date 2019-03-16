@@ -47,7 +47,7 @@ export default function Pagination({
       </Text>
       <Text
         onClick={() => onNext(currentPage + 1)}
-        disabled={currentPage === totalPageCount}
+        disabled={currentPage >= totalPageCount}
       >
         Next
       </Text>
