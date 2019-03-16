@@ -7,8 +7,8 @@ import { connect } from "react-redux";
 
 import NavBar from "../../NavBar";
 import Footer from "../../Footer";
-import ProductOverview from "./productOverview";
-import SidebarFilter from "./sidebarFilter";
+import ProductOverview from "./ProductOverview";
+import SidebarFilter from "./SidebarFilter";
 
 import {
   carActions,
