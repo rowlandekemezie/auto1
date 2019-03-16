@@ -1,0 +1,440 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SidebarFilter /> should render component properly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SidebarFilter
+    colors={
+      Object {
+        "colors": Array [
+          "Red",
+          "Yellow",
+        ],
+      }
+    }
+    fetchAllCars={[MockFunction]}
+    fetchAllColors={[MockFunction]}
+    fetchAllManufacturers={[MockFunction]}
+    manufacturers={
+      Object {
+        "manufactures": Array [
+          "BMW",
+          "FORD",
+        ],
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <FilterBox
+          handleOnChange={[Function]}
+          options={
+            Array [
+              Object {
+                "label": "All car colors",
+                "value": "",
+              },
+              Object {
+                "label": "Red",
+                "value": "Red",
+              },
+              Object {
+                "label": "Yellow",
+                "value": "Yellow",
+              },
+            ]
+          }
+          title="color"
+          value={
+            Object {
+              "label": "All car colors",
+              "value": "",
+            }
+          }
+        />,
+        <FilterBox
+          handleOnChange={[Function]}
+          options={
+            Array [
+              Object {
+                "label": "All manufacturers",
+                "value": "",
+              },
+            ]
+          }
+          title="manufacturer"
+          value={
+            Object {
+              "label": "All manufacturers",
+              "value": "",
+            }
+          }
+        />,
+        <ForwardRef>
+          <_default
+            label="Filter"
+            onClick={[Function]}
+          />
+        </ForwardRef>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "handleOnChange": [Function],
+          "options": Array [
+            Object {
+              "label": "All car colors",
+              "value": "",
+            },
+            Object {
+              "label": "Red",
+              "value": "Red",
+            },
+            Object {
+              "label": "Yellow",
+              "value": "Yellow",
+            },
+          ],
+          "title": "color",
+          "value": Object {
+            "label": "All car colors",
+            "value": "",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "handleOnChange": [Function],
+          "options": Array [
+            Object {
+              "label": "All manufacturers",
+              "value": "",
+            },
+          ],
+          "title": "manufacturer",
+          "value": Object {
+            "label": "All manufacturers",
+            "value": "",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <_default
+            label="Filter"
+            onClick={[Function]}
+          />,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "label": "Filter",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-ifAKCX",
+            "isStatic": true,
+            "rules": Array [
+              "
+  align-self: flex-end;
+  margin-top: 24px;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-ifAKCX",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bxivhb",
+        "isStatic": false,
+        "rules": Array [
+          "
+  display: flex;
+  flex-direction: column;
+  width: 33.333%;
+  margin-right: 24px;
+  padding: 24px;
+  border: 2px solid ",
+          [Function],
+          ";
+  height: 30%;
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-bxivhb",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <FilterBox
+            handleOnChange={[Function]}
+            options={
+              Array [
+                Object {
+                  "label": "All car colors",
+                  "value": "",
+                },
+                Object {
+                  "label": "Red",
+                  "value": "Red",
+                },
+                Object {
+                  "label": "Yellow",
+                  "value": "Yellow",
+                },
+              ]
+            }
+            title="color"
+            value={
+              Object {
+                "label": "All car colors",
+                "value": "",
+              }
+            }
+          />,
+          <FilterBox
+            handleOnChange={[Function]}
+            options={
+              Array [
+                Object {
+                  "label": "All manufacturers",
+                  "value": "",
+                },
+              ]
+            }
+            title="manufacturer"
+            value={
+              Object {
+                "label": "All manufacturers",
+                "value": "",
+              }
+            }
+          />,
+          <ForwardRef>
+            <_default
+              label="Filter"
+              onClick={[Function]}
+            />
+          </ForwardRef>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "handleOnChange": [Function],
+            "options": Array [
+              Object {
+                "label": "All car colors",
+                "value": "",
+              },
+              Object {
+                "label": "Red",
+                "value": "Red",
+              },
+              Object {
+                "label": "Yellow",
+                "value": "Yellow",
+              },
+            ],
+            "title": "color",
+            "value": Object {
+              "label": "All car colors",
+              "value": "",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "handleOnChange": [Function],
+            "options": Array [
+              Object {
+                "label": "All manufacturers",
+                "value": "",
+              },
+            ],
+            "title": "manufacturer",
+            "value": Object {
+              "label": "All manufacturers",
+              "value": "",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <_default
+              label="Filter"
+              onClick={[Function]}
+            />,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "label": "Filter",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-ifAKCX",
+              "isStatic": true,
+              "rules": Array [
+                "
+  align-self: flex-end;
+  margin-top: 24px;
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-ifAKCX",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bxivhb",
+          "isStatic": false,
+          "rules": Array [
+            "
+  display: flex;
+  flex-direction: column;
+  width: 33.333%;
+  margin-right: 24px;
+  padding: 24px;
+  border: 2px solid ",
+            [Function],
+            ";
+  height: 30%;
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bxivhb",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

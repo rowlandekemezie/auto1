@@ -1,0 +1,563 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CarDetails /> should render component properly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CarDetails
+    carId="1234"
+    fetchACar={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <NavBar />,
+        <ForwardRef>
+          <DescriptionCard />
+          <ForwardRef>
+            <ForwardRef>
+              If you like this car, click the button and save it in your collection fo favourite items.
+            </ForwardRef>
+            <ForwardRef>
+              <_default
+                label="Save"
+                onClick={[Function]}
+              />
+            </ForwardRef>
+          </ForwardRef>
+        </ForwardRef>,
+        <Footer />,
+      ],
+      "color": "#CDCDCD",
+      "delay": 200,
+      "ready": false,
+      "rows": 7,
+      "type": "media",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <DescriptionCard />,
+            <ForwardRef>
+              <ForwardRef>
+                If you like this car, click the button and save it in your collection fo favourite items.
+              </ForwardRef>
+              <ForwardRef>
+                <_default
+                  label="Save"
+                  onClick={[Function]}
+                />
+              </ForwardRef>
+            </ForwardRef>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "car": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <ForwardRef>
+                  If you like this car, click the button and save it in your collection fo favourite items.
+                </ForwardRef>,
+                <ForwardRef>
+                  <_default
+                    label="Save"
+                    onClick={[Function]}
+                  />
+                </ForwardRef>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "If you like this car, click the button and save it in your collection fo favourite items.",
+                },
+                "ref": null,
+                "rendered": "If you like this car, click the button and save it in your collection fo favourite items.",
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-iwsKbI",
+                    "isStatic": true,
+                    "rules": Array [
+                      "
+  font-size: 14px;
+  line-height: 24px;
+  text-align: justify;
+",
+                    ],
+                  },
+                  "displayName": "styled.p",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-iwsKbI",
+                  "target": "p",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <_default
+                    label="Save"
+                    onClick={[Function]}
+                  />,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "label": "Save",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-gqjmRU",
+                    "isStatic": true,
+                    "rules": Array [
+                      "
+  align-self: flex-end;
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-gqjmRU",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
+              },
+            ],
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-htoDjs",
+                "isStatic": false,
+                "rules": Array [
+                  "
+  border: 2px solid ",
+                  [Function],
+                  ";
+  transition: all 0.3s ease;
+  padding: 12px;
+  margin-bottom: 12px;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+
+  &:focus,
+  &:hover {
+    box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+  }
+
+  @media (min-width: 768px) {
+    width: 30%;
+  }
+",
+                ],
+              },
+              "displayName": "styled.div",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-htoDjs",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            },
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-gzVnrw",
+            "isStatic": true,
+            "rules": Array [
+              "
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+  justify-content: space-between;
+  min-height: 100vh;
+  min-height: calc(100vh - 184px);
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding: 24px;
+  }
+",
+            ],
+          },
+          "displayName": "styled.main",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-gzVnrw",
+          "target": "main",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <NavBar />,
+          <ForwardRef>
+            <DescriptionCard />
+            <ForwardRef>
+              <ForwardRef>
+                If you like this car, click the button and save it in your collection fo favourite items.
+              </ForwardRef>
+              <ForwardRef>
+                <_default
+                  label="Save"
+                  onClick={[Function]}
+                />
+              </ForwardRef>
+            </ForwardRef>
+          </ForwardRef>,
+          <Footer />,
+        ],
+        "color": "#CDCDCD",
+        "delay": 200,
+        "ready": false,
+        "rows": 7,
+        "type": "media",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <DescriptionCard />,
+              <ForwardRef>
+                <ForwardRef>
+                  If you like this car, click the button and save it in your collection fo favourite items.
+                </ForwardRef>
+                <ForwardRef>
+                  <_default
+                    label="Save"
+                    onClick={[Function]}
+                  />
+                </ForwardRef>
+              </ForwardRef>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "car": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <ForwardRef>
+                    If you like this car, click the button and save it in your collection fo favourite items.
+                  </ForwardRef>,
+                  <ForwardRef>
+                    <_default
+                      label="Save"
+                      onClick={[Function]}
+                    />
+                  </ForwardRef>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "If you like this car, click the button and save it in your collection fo favourite items.",
+                  },
+                  "ref": null,
+                  "rendered": "If you like this car, click the button and save it in your collection fo favourite items.",
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-iwsKbI",
+                      "isStatic": true,
+                      "rules": Array [
+                        "
+  font-size: 14px;
+  line-height: 24px;
+  text-align: justify;
+",
+                      ],
+                    },
+                    "displayName": "styled.p",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-iwsKbI",
+                    "target": "p",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  },
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": <_default
+                      label="Save"
+                      onClick={[Function]}
+                    />,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "label": "Save",
+                      "onClick": [Function],
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-gqjmRU",
+                      "isStatic": true,
+                      "rules": Array [
+                        "
+  align-self: flex-end;
+",
+                      ],
+                    },
+                    "displayName": "styled.div",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-gqjmRU",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  },
+                },
+              ],
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htoDjs",
+                  "isStatic": false,
+                  "rules": Array [
+                    "
+  border: 2px solid ",
+                    [Function],
+                    ";
+  transition: all 0.3s ease;
+  padding: 12px;
+  margin-bottom: 12px;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+
+  &:focus,
+  &:hover {
+    box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+  }
+
+  @media (min-width: 768px) {
+    width: 30%;
+  }
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-htoDjs",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              },
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-gzVnrw",
+              "isStatic": true,
+              "rules": Array [
+                "
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+  justify-content: space-between;
+  min-height: 100vh;
+  min-height: calc(100vh - 184px);
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding: 24px;
+  }
+",
+              ],
+            },
+            "displayName": "styled.main",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-gzVnrw",
+            "target": "main",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

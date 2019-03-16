@@ -1,0 +1,1017 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductOverview /> should render component properly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ProductOverview
+    carId="1234"
+    cars={
+      Array [
+        Object {
+          "color": "red",
+          "fuelType": "diesel",
+          "mileage": Object {
+            "number": 234,
+          },
+          "modelName": "1",
+          "stockNumber": 2,
+        },
+      ]
+    }
+    fetchACar={[MockFunction]}
+    handleOnChange={[MockFunction]}
+    onNext={[MockFunction]}
+    onPrevious={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <ForwardRef>
+        <ForwardRef>
+          <ForwardRef>
+            <ForwardRef>
+              Available cars
+            </ForwardRef>
+            <ForwardRef>
+              Showing 
+              1
+               of 
+               
+              result
+               
+            </ForwardRef>
+          </ForwardRef>
+          <ForwardRef>
+            <FilterBox
+              handleOnChange={[MockFunction]}
+              options={
+                Array [
+                  Object {
+                    "label": "None",
+                    "value": "",
+                  },
+                  Object {
+                    "label": "Mileage - Ascending Order",
+                    "value": "asc",
+                  },
+                  Object {
+                    "label": "Mileage - Descending Order",
+                    "value": "des",
+                  },
+                ]
+              }
+              title="Sort by"
+            />
+          </ForwardRef>
+        </ForwardRef>
+        <Card
+          car={
+            Object {
+              "color": "red",
+              "fuelType": "diesel",
+              "mileage": Object {
+                "number": 234,
+              },
+              "modelName": "1",
+              "stockNumber": 2,
+            }
+          }
+        />
+        <Pagination
+          onNext={[MockFunction]}
+          onPrevious={[MockFunction]}
+        />
+      </ForwardRef>,
+      "color": "#CDCDCD",
+      "delay": 0,
+      "ready": true,
+      "row": 7,
+      "type": "media",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <ForwardRef>
+            <ForwardRef>
+              <ForwardRef>
+                Available cars
+              </ForwardRef>
+              <ForwardRef>
+                Showing 
+                1
+                 of 
+                 
+                result
+                 
+              </ForwardRef>
+            </ForwardRef>
+            <ForwardRef>
+              <FilterBox
+                handleOnChange={[MockFunction]}
+                options={
+                  Array [
+                    Object {
+                      "label": "None",
+                      "value": "",
+                    },
+                    Object {
+                      "label": "Mileage - Ascending Order",
+                      "value": "asc",
+                    },
+                    Object {
+                      "label": "Mileage - Descending Order",
+                      "value": "des",
+                    },
+                  ]
+                }
+                title="Sort by"
+              />
+            </ForwardRef>
+          </ForwardRef>,
+          Array [
+            <Card
+              car={
+                Object {
+                  "color": "red",
+                  "fuelType": "diesel",
+                  "mileage": Object {
+                    "number": 234,
+                  },
+                  "modelName": "1",
+                  "stockNumber": 2,
+                }
+              }
+            />,
+          ],
+          <Pagination
+            onNext={[MockFunction]}
+            onPrevious={[MockFunction]}
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <ForwardRef>
+                <ForwardRef>
+                  Available cars
+                </ForwardRef>
+                <ForwardRef>
+                  Showing 
+                  1
+                   of 
+                   
+                  result
+                   
+                </ForwardRef>
+              </ForwardRef>,
+              <ForwardRef>
+                <FilterBox
+                  handleOnChange={[MockFunction]}
+                  options={
+                    Array [
+                      Object {
+                        "label": "None",
+                        "value": "",
+                      },
+                      Object {
+                        "label": "Mileage - Ascending Order",
+                        "value": "asc",
+                      },
+                      Object {
+                        "label": "Mileage - Descending Order",
+                        "value": "des",
+                      },
+                    ]
+                  }
+                  title="Sort by"
+                />
+              </ForwardRef>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <ForwardRef>
+                    Available cars
+                  </ForwardRef>,
+                  <ForwardRef>
+                    Showing 
+                    1
+                     of 
+                     
+                    result
+                     
+                  </ForwardRef>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": "Available cars",
+                  },
+                  "ref": null,
+                  "rendered": "Available cars",
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-iwsKbI",
+                      "isStatic": true,
+                      "rules": Array [
+                        "
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 8px;
+",
+                      ],
+                    },
+                    "displayName": "styled.p",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-iwsKbI",
+                    "target": "p",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  },
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": Array [
+                      "Showing ",
+                      1,
+                      " of ",
+                      undefined,
+                      " ",
+                      "result",
+                      " ",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Showing ",
+                    1,
+                    " of ",
+                    undefined,
+                    " ",
+                    "result",
+                    " ",
+                  ],
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-jTzLTM",
+                      "isStatic": true,
+                      "rules": Array [
+                        "
+  font-size: 18px;
+",
+                      ],
+                    },
+                    "displayName": "styled.p",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-jTzLTM",
+                    "target": "p",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  },
+                },
+              ],
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-VigVT",
+                  "isStatic": true,
+                  "rules": Array [
+                    "
+  width: 60%;
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-VigVT",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              },
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <FilterBox
+                  handleOnChange={[MockFunction]}
+                  options={
+                    Array [
+                      Object {
+                        "label": "None",
+                        "value": "",
+                      },
+                      Object {
+                        "label": "Mileage - Ascending Order",
+                        "value": "asc",
+                      },
+                      Object {
+                        "label": "Mileage - Descending Order",
+                        "value": "des",
+                      },
+                    ]
+                  }
+                  title="Sort by"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "handleOnChange": [MockFunction],
+                  "options": Array [
+                    Object {
+                      "label": "None",
+                      "value": "",
+                    },
+                    Object {
+                      "label": "Mileage - Ascending Order",
+                      "value": "asc",
+                    },
+                    Object {
+                      "label": "Mileage - Descending Order",
+                      "value": "des",
+                    },
+                  ],
+                  "title": "Sort by",
+                  "value": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gZMcBi",
+                  "isStatic": true,
+                  "rules": Array [
+                    "
+  margin-bottom: 24px;
+
+  @media (min-width: 768px) {
+    width: 40%;
+  }
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gZMcBi",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              },
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-gqjmRU",
+              "isStatic": true,
+              "rules": Array [
+                "
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-gqjmRU",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "function",
+          "props": Object {
+            "car": Object {
+              "color": "red",
+              "fuelType": "diesel",
+              "mileage": Object {
+                "number": 234,
+              },
+              "modelName": "1",
+              "stockNumber": 2,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "currentPage": undefined,
+            "onNext": [MockFunction],
+            "onPrevious": [MockFunction],
+            "previousPage": undefined,
+            "totalPageCount": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-ifAKCX",
+          "isStatic": true,
+          "rules": Array [
+            "
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 66.666%;
+  }
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-ifAKCX",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <ForwardRef>
+          <ForwardRef>
+            <ForwardRef>
+              <ForwardRef>
+                Available cars
+              </ForwardRef>
+              <ForwardRef>
+                Showing 
+                1
+                 of 
+                 
+                result
+                 
+              </ForwardRef>
+            </ForwardRef>
+            <ForwardRef>
+              <FilterBox
+                handleOnChange={[MockFunction]}
+                options={
+                  Array [
+                    Object {
+                      "label": "None",
+                      "value": "",
+                    },
+                    Object {
+                      "label": "Mileage - Ascending Order",
+                      "value": "asc",
+                    },
+                    Object {
+                      "label": "Mileage - Descending Order",
+                      "value": "des",
+                    },
+                  ]
+                }
+                title="Sort by"
+              />
+            </ForwardRef>
+          </ForwardRef>
+          <Card
+            car={
+              Object {
+                "color": "red",
+                "fuelType": "diesel",
+                "mileage": Object {
+                  "number": 234,
+                },
+                "modelName": "1",
+                "stockNumber": 2,
+              }
+            }
+          />
+          <Pagination
+            onNext={[MockFunction]}
+            onPrevious={[MockFunction]}
+          />
+        </ForwardRef>,
+        "color": "#CDCDCD",
+        "delay": 0,
+        "ready": true,
+        "row": 7,
+        "type": "media",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <ForwardRef>
+              <ForwardRef>
+                <ForwardRef>
+                  Available cars
+                </ForwardRef>
+                <ForwardRef>
+                  Showing 
+                  1
+                   of 
+                   
+                  result
+                   
+                </ForwardRef>
+              </ForwardRef>
+              <ForwardRef>
+                <FilterBox
+                  handleOnChange={[MockFunction]}
+                  options={
+                    Array [
+                      Object {
+                        "label": "None",
+                        "value": "",
+                      },
+                      Object {
+                        "label": "Mileage - Ascending Order",
+                        "value": "asc",
+                      },
+                      Object {
+                        "label": "Mileage - Descending Order",
+                        "value": "des",
+                      },
+                    ]
+                  }
+                  title="Sort by"
+                />
+              </ForwardRef>
+            </ForwardRef>,
+            Array [
+              <Card
+                car={
+                  Object {
+                    "color": "red",
+                    "fuelType": "diesel",
+                    "mileage": Object {
+                      "number": 234,
+                    },
+                    "modelName": "1",
+                    "stockNumber": 2,
+                  }
+                }
+              />,
+            ],
+            <Pagination
+              onNext={[MockFunction]}
+              onPrevious={[MockFunction]}
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <ForwardRef>
+                  <ForwardRef>
+                    Available cars
+                  </ForwardRef>
+                  <ForwardRef>
+                    Showing 
+                    1
+                     of 
+                     
+                    result
+                     
+                  </ForwardRef>
+                </ForwardRef>,
+                <ForwardRef>
+                  <FilterBox
+                    handleOnChange={[MockFunction]}
+                    options={
+                      Array [
+                        Object {
+                          "label": "None",
+                          "value": "",
+                        },
+                        Object {
+                          "label": "Mileage - Ascending Order",
+                          "value": "asc",
+                        },
+                        Object {
+                          "label": "Mileage - Descending Order",
+                          "value": "des",
+                        },
+                      ]
+                    }
+                    title="Sort by"
+                  />
+                </ForwardRef>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    <ForwardRef>
+                      Available cars
+                    </ForwardRef>,
+                    <ForwardRef>
+                      Showing 
+                      1
+                       of 
+                       
+                      result
+                       
+                    </ForwardRef>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": "Available cars",
+                    },
+                    "ref": null,
+                    "rendered": "Available cars",
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-iwsKbI",
+                        "isStatic": true,
+                        "rules": Array [
+                          "
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 8px;
+",
+                        ],
+                      },
+                      "displayName": "styled.p",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-iwsKbI",
+                      "target": "p",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    },
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": Array [
+                        "Showing ",
+                        1,
+                        " of ",
+                        undefined,
+                        " ",
+                        "result",
+                        " ",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Showing ",
+                      1,
+                      " of ",
+                      undefined,
+                      " ",
+                      "result",
+                      " ",
+                    ],
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-jTzLTM",
+                        "isStatic": true,
+                        "rules": Array [
+                          "
+  font-size: 18px;
+",
+                        ],
+                      },
+                      "displayName": "styled.p",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-jTzLTM",
+                      "target": "p",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    },
+                  },
+                ],
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-VigVT",
+                    "isStatic": true,
+                    "rules": Array [
+                      "
+  width: 60%;
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-VigVT",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <FilterBox
+                    handleOnChange={[MockFunction]}
+                    options={
+                      Array [
+                        Object {
+                          "label": "None",
+                          "value": "",
+                        },
+                        Object {
+                          "label": "Mileage - Ascending Order",
+                          "value": "asc",
+                        },
+                        Object {
+                          "label": "Mileage - Descending Order",
+                          "value": "des",
+                        },
+                      ]
+                    }
+                    title="Sort by"
+                  />,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleOnChange": [MockFunction],
+                    "options": Array [
+                      Object {
+                        "label": "None",
+                        "value": "",
+                      },
+                      Object {
+                        "label": "Mileage - Ascending Order",
+                        "value": "asc",
+                      },
+                      Object {
+                        "label": "Mileage - Descending Order",
+                        "value": "des",
+                      },
+                    ],
+                    "title": "Sort by",
+                    "value": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-gZMcBi",
+                    "isStatic": true,
+                    "rules": Array [
+                      "
+  margin-bottom: 24px;
+
+  @media (min-width: 768px) {
+    width: 40%;
+  }
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-gZMcBi",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                },
+              },
+            ],
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-gqjmRU",
+                "isStatic": true,
+                "rules": Array [
+                  "
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+",
+                ],
+              },
+              "displayName": "styled.div",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-gqjmRU",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            },
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "function",
+            "props": Object {
+              "car": Object {
+                "color": "red",
+                "fuelType": "diesel",
+                "mileage": Object {
+                  "number": 234,
+                },
+                "modelName": "1",
+                "stockNumber": 2,
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "currentPage": undefined,
+              "onNext": [MockFunction],
+              "onPrevious": [MockFunction],
+              "previousPage": undefined,
+              "totalPageCount": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-ifAKCX",
+            "isStatic": true,
+            "rules": Array [
+              "
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 66.666%;
+  }
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-ifAKCX",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
