@@ -20,7 +20,7 @@ export const renderOptions = (values = [], allOption) =>
       acc.push({ value: next, label: next });
       return acc;
     },
-    [{ label: allOption, value: "" }]
+    [{ label: allOption || "None", value: "" }]
   );
 
 /**
