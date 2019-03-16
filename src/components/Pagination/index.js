@@ -31,8 +31,6 @@ export default function Pagination({
   currentPage,
   previousPage
 }) {
-  console.log(totalPageCount);
-
   return (
     <Wrapper>
       <Text onClick={() => onNext(1)} disabled={currentPage === 1}>

@@ -87,7 +87,7 @@ const SubTitle = styled("p")`
   font-size: 18px;
 `;
 
-export function Card({ car }) {
+function Card({ car }) {
   return (
     <CardWrapper>
       <Image src={car.pictureUrl} />
@@ -113,6 +113,7 @@ export default function ProductOverview({
   cars,
   value,
   onNext,
+  isLoading,
   onPrevious,
   currentPage,
   previousPage,
@@ -120,7 +121,7 @@ export default function ProductOverview({
   handleOnChange
 }) {
   return (
-    <PlaceHolder ready={!!cars} type="media" row={7}>
+    <PlaceHolder ready={!!cars || isLoading} type="media" row={7}>
       <Wrapper>
         <HeadingContainer>
           <PageMetaData>

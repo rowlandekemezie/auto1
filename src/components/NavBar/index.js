@@ -25,6 +25,7 @@ const BrandLogo = styled(NavLink)`
   width: 150px;
   height: 32px;
 `;
+
 const Logo = styled("img")`
   width: 100%;
   height: 100%;
@@ -37,7 +38,7 @@ const StyledNavLink = styled(NavLink)`
   margin-left: 20px;
 `;
 
-const renderLink = (page, i = -1) => (
+const renderLink = (page, i) => (
   <StyledNavLink
     key={i}
     to={`/`} /** Should be a real page when this feature is provided **/
