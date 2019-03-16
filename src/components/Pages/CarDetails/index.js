@@ -9,7 +9,7 @@ import Footer from "../../Footer";
 import Button from "../../Button";
 
 import { carActions } from "../../../redux/actions";
-import { capitalize, saveToCollection } from "../../../utils";
+import { capitalize } from "../../../utils";
 
 const Main = styled("main")`
   flex: 1;
@@ -95,8 +95,15 @@ function DescriptionCard({ car }) {
   );
 }
 
-export function CarDetails({ fetchACar, carId, selectedCar }) {
-  const handleOnSave = () => saveToCollection(selectedCar);
+export function CarDetails({
+  fetchACar,
+  carId,
+  selectedCar,
+  saveCollection,
+  collection
+}) {
+  const handleOnSave = () => saveCollection(selectedCar);
+  const isSaved = collection.find(i => i.stockNumber === parseInt(carId));
 
   useEffect(() => {
     fetchACar(carId);
@@ -113,7 +120,10 @@ export function CarDetails({ fetchACar, carId, selectedCar }) {
             collection fo favourite items.
           </Text>
           <SaveButtonWrapper>
-            <Button label={"Save"} onClick={handleOnSave} />
+            <Button
+              label={`${isSaved ? "Remove from collection" : "Save"}`}
+              onClick={handleOnSave}
+            />
           </SaveButtonWrapper>
         </CallToActionBox>
       </Main>
@@ -122,14 +132,19 @@ export function CarDetails({ fetchACar, carId, selectedCar }) {
   );
 }
 
-const mapStateToProps = ({ cars: { selectedCar, isLoading } }, ownParams) => ({
+const mapStateToProps = (
+  { cars: { selectedCar, isLoading, collection } },
+  ownParams
+) => ({
   selectedCar,
   isLoading,
+  collection,
   carId: ownParams.match.params.carId
 });
 
 const mapDispatchToProps = {
-  fetchACar: carActions.fetchACar
+  fetchACar: carActions.fetchACar,
+  saveCollection: carActions.saveCollection
 };
 
 export default connect(
@@ -151,5 +166,6 @@ CarDetails.propTypes = {
     isLoading: PropTypes.bool
   }),
   carId: PropTypes.string.isRequired,
-  fetchACar: PropTypes.func.isRequired
+  fetchACar: PropTypes.func.isRequired,
+  collection: PropTypes.array
 };

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Placeholder from "react-placeholder";
-import queryString from "query-string";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 

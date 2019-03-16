@@ -15,7 +15,8 @@ const mockStore = configureStore(middlewares);
 describe("<CarDetails />", () => {
   const props = {
     carId: "1234",
-    fetchACar: jest.fn()
+    fetchACar: jest.fn(),
+    collection: []
   };
   let store;
   beforeEach(() => {

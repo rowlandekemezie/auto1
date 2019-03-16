@@ -3,8 +3,7 @@ import {
   buildQueryString,
   renderOptions,
   initialPageNumber,
-  saveToCollection,
-  getItemFromFavoriteCollection
+  saveCollectionToLocalStorage
 } from "../../utils";
 import { JSDOM } from "jsdom";
 
@@ -86,5 +85,49 @@ describe("initialPageNumber", () => {
   it("should return an integer of the page query params", () => {
     window.history.pushState({}, "Test Title", "/test.html?page=5");
     expect(initialPageNumber()).toEqual(5);
+  });
+});
+
+describe("saveCollectionToLocalStorage", () => {
+  const mockData = {
+    stockNumber: 1,
+    color: "red"
+  };
+  afterEach(() => {
+    window.localStorage.removeItem("collection");
+  });
+  it("should return items in localStorage", () => {
+    const expectedValue = [
+      {
+        stockNumber: 1,
+        color: "red"
+      },
+      {
+        stockNumber: 2,
+        color: "green"
+      }
+    ];
+
+    saveCollectionToLocalStorage(mockData);
+
+    expect(
+      saveCollectionToLocalStorage({
+        stockNumber: 2,
+        color: "green"
+      }).length
+    ).toBe(2);
+
+    expect(JSON.parse(window.localStorage.getItem("collection"))).toEqual(
+      expectedValue
+    );
+  });
+
+  it("should not add duplicate cars to the collection", () => {
+    saveCollectionToLocalStorage(mockData);
+    saveCollectionToLocalStorage(mockData);
+
+    expect(JSON.parse(window.localStorage.getItem("collection")).length).toBe(
+      0
+    );
   });
 });

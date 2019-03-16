@@ -4,8 +4,11 @@ import {
   FETCH_ALL_CARS_FAILURE,
   FETCH_A_CAR_SUCCESS,
   FETCH_A_CAR,
-  FETCH_A_CAR_FAILURE
+  FETCH_A_CAR_FAILURE,
+  SAVE_COLLECTION
 } from "../actions/actionTypes";
+
+import { saveCollectionToLocalStorage } from "../../utils";
 
 const initialState = {
   cars: []
@@ -42,6 +45,11 @@ export default function(state = initialState, action) {
         ...state,
         isLoading: false,
         error: action.error
+      };
+    case SAVE_COLLECTION:
+      return {
+        ...state,
+        collection: saveCollectionToLocalStorage(action.car)
       };
     default:
       return state;

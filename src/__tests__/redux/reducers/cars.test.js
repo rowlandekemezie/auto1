@@ -7,14 +7,15 @@ import {
   FETCH_ALL_CARS_SUCCESS,
   FETCH_A_CAR_FAILURE,
   FETCH_ALL_CARS_FAILURE,
-  FETCH_A_CAR_SUCCESS
+  FETCH_A_CAR_SUCCESS,
+  SAVE_COLLECTION
 } from "../../../redux/actions/actionTypes";
 
-describe("Car Reducer", () => {
-  const initialState = {
-    cars: []
-  };
+const initialState = {
+  cars: []
+};
 
+describe("Car Reducer", () => {
   it("should return initial values", () => {
     expect(carReducer(undefined, {})).toEqual(initialState);
   });
@@ -89,6 +90,21 @@ describe("Car Reducer", () => {
       carReducer(initialState, {
         type: FETCH_A_CAR_SUCCESS,
         data: { stockNumber: 1, color: "red" }
+      })
+    ).toEqual(expectedValue);
+  });
+});
+
+describe("should handle SAVE_COLLECTION", () => {
+  it("should save return all collection", () => {
+    const expectedValue = {
+      collection: [{}],
+      cars: []
+    };
+    expect(
+      carReducer(initialState, {
+        type: SAVE_COLLECTION,
+        car: {}
       })
     ).toEqual(expectedValue);
   });

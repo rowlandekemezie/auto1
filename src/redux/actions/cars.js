@@ -4,7 +4,8 @@ import {
   FETCH_ALL_CARS_FAILURE,
   FETCH_A_CAR,
   FETCH_A_CAR_SUCCESS,
-  FETCH_A_CAR_FAILURE
+  FETCH_A_CAR_FAILURE,
+  SAVE_COLLECTION
 } from "./actionTypes";
 
 export function fetchAllCars(query) {
@@ -46,5 +47,12 @@ export function fetchACarFailure(error) {
   return {
     type: FETCH_A_CAR_FAILURE,
     error
+  };
+}
+
+export function saveCollection(car) {
+  return {
+    type: SAVE_COLLECTION,
+    car
   };
 }

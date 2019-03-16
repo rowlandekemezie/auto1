@@ -1,11 +1,15 @@
-// Cars action types
+// Fetch cars action types
 export const FETCH_ALL_CARS_SUCCESS = "FETCH_ALL_CARS_SUCCESS";
 export const FETCH_ALL_CARS_FAILURE = "FETCH_ALL_CARS_FAILURE";
 export const FETCH_ALL_CARS = "FETCH_ALL_CARS";
 
+// Fetch car action types
 export const FETCH_A_CAR_SUCCESS = "FETCH_A_CAR_SUCCESS";
 export const FETCH_A_CAR_FAILURE = "FETCH_A_CAR_FAILURE";
 export const FETCH_A_CAR = "FETCH_A_CAR";
+
+// Save collection
+export const SAVE_COLLECTION = "SAVE_COLLECTION";
 
 // Colors action types
 export const FETCH_ALL_COLORS_SUCCESS = "FETCH_ALL_COLORS_SUCCESS";

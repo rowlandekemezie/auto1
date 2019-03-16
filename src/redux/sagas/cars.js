@@ -3,8 +3,8 @@ import { carActions } from "../actions";
 import { FETCH_ALL_CARS, FETCH_A_CAR } from "../actions/actionTypes";
 import { apiCall } from "../api";
 
-const saveToLocalStorage = state =>
-  localStorage.setItem("cars", JSON.stringify(state));
+const saveToLocalStorage = (state, key) =>
+  localStorage.setItem(key, JSON.stringify(state));
 
 export function* fetchCars({ query }) {
   try {
@@ -12,7 +12,7 @@ export function* fetchCars({ query }) {
     yield put(carActions.fetchAllCarsSuccess(data));
     // Persist to localStorage
     const cars = yield select(a => a.cars.cars);
-    yield call(saveToLocalStorage, cars);
+    yield call(saveToLocalStorage, cars, "cars");
   } catch (error) {
     yield put(carActions.fetchAllCarsFailure(error));
   }
@@ -22,7 +22,7 @@ export function* fetchCar({ carId }) {
   try {
     // access the car from the redux store and only make an API call if it doesn't exist.
     const cars = yield select(a => a.cars.cars);
-    const car = cars.find(car => car.id === carId);
+    const car = cars && cars.find(car => car.id === carId);
 
     if (car) {
       yield put(carActions.fetchACarSuccess(car));

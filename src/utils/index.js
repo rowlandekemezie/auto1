@@ -44,27 +44,19 @@ export const buildQueryString = filters => {
  * @param {Object} item
  * @return {String}
  */
-export const saveToCollection = item => {
+export const saveCollectionToLocalStorage = car => {
   const collection = JSON.parse(localStorage.getItem("collection")) || [];
-  const isSavedInCollection = getItemFromFavoriteCollection(item);
+  const isSavedInCollection = collection.find(
+    i => i.stockNumber === car.stockNumber
+  );
   let newCollection;
   if (isSavedInCollection) {
-    newCollection = collection.filter(i => i.stockNumber !== item.stockNumber);
+    newCollection = collection.filter(i => i.stockNumber !== car.stockNumber);
   } else {
-    newCollection = collection.concat(item);
+    newCollection = collection.concat(car);
   }
   localStorage.setItem("collection", JSON.stringify(newCollection));
-};
-
-/**
- *
- * @param {Object} {}
- * @return {Object}
- */
-export const getItemFromFavoriteCollection = ({ stockNumber } = {}) => {
-  const collection = JSON.parse(localStorage.getItem("collection") || []);
-
-  return collection.find(item => item.stockNumber === stockNumber);
+  return newCollection;
 };
 
 /**

@@ -141,7 +141,7 @@ export default function ProductOverview({
           </SortFilterBoxWrapper>
         </HeadingContainer>
         {cars.map((car, index) => (
-          <Card car={car} key={car.stockNumber} />
+          <Card car={car} key={`${car.stockNumber}-${index}`} />
         ))}
         <Pagination
           currentPage={currentPage}
