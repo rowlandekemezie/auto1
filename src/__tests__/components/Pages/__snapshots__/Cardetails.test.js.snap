@@ -23,7 +23,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <NavBar />,
+        <Navbar />,
         <ForwardRef>
           <DescriptionCard />
           <ForwardRef>
@@ -284,7 +284,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <NavBar />,
+          <Navbar />,
           <ForwardRef>
             <DescriptionCard />
             <ForwardRef>

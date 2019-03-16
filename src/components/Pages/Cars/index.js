@@ -4,7 +4,7 @@ import Placeholder from "react-placeholder";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
-import NavBar from "../../NavBar";
+import Navbar from "../../Navbar";
 import Footer from "../../Footer";
 import ProductOverview from "./ProductOverview";
 import SidebarFilter from "./SidebarFilter";
@@ -66,7 +66,7 @@ export function Cars({
 
   return (
     <Placeholder ready={!!cars} type="media" rows={7}>
-      <NavBar />
+      <Navbar />
       <Main>
         <SidebarFilter
           fetchAllColors={fetchAllColors}

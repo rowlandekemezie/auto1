@@ -47,7 +47,7 @@ const renderLink = (page, i) => (
   </StyledNavLink>
 );
 
-const NavBar = () => {
+const Navbar = () => {
   const pages = ["Purchase", "My Orders", "Sell"];
 
   return (
@@ -60,4 +60,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;

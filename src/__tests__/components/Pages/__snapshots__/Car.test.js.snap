@@ -43,7 +43,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <NavBar />,
+        <Navbar />,
         <ForwardRef>
           <SidebarFilter
             colors={
@@ -253,7 +253,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <NavBar />,
+          <Navbar />,
           <ForwardRef>
             <SidebarFilter
               colors={

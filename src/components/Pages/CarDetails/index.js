@@ -4,7 +4,7 @@ import Placeholder from "react-placeholder";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
-import NavBar from "../../NavBar";
+import Navbar from "../../Navbar";
 import Footer from "../../Footer";
 import Button from "../../Button";
 
@@ -116,7 +116,7 @@ export function CarDetails({
 
   return (
     <Placeholder ready={!!selectedCar} type="media" rows={7} delay={200}>
-      <NavBar />
+      <Navbar />
       <Main>
         <DescriptionCard car={selectedCar} />
         <CallToActionBox>
