@@ -118,21 +118,19 @@ export default connect(
 )(Cars);
 
 Cars.propTypes = {
-  cars: PropTypes.shape({
-    cars: PropTypes.arrayOf(
-      PropTypes.shape({
-        modelName: PropTypes.string.isRequired,
-        stockNumber: PropTypes.number.isRequired,
-        color: PropTypes.string.isRequired,
-        fuelType: PropTypes.string.isRequired,
-        mileage: PropTypes.shape({
-          number: PropTypes.number.isRequired
-        })
-      }).isRequired
-    ),
-    isLoading: PropTypes.bool,
-    totalPageCount: PropTypes.number
-  }),
+  cars: PropTypes.arrayOf(
+    PropTypes.shape({
+      modelName: PropTypes.string.isRequired,
+      stockNumber: PropTypes.number.isRequired,
+      color: PropTypes.string.isRequired,
+      fuelType: PropTypes.string.isRequired,
+      mileage: PropTypes.shape({
+        number: PropTypes.number.isRequired
+      })
+    })
+  ),
+  isLoading: PropTypes.bool,
+  totalPageCount: PropTypes.number,
   fetchAllColors: PropTypes.func.isRequired,
   fetchAllManufacturers: PropTypes.func.isRequired,
   manufacturers: PropTypes.shape({

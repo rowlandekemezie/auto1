@@ -8,7 +8,7 @@ const sagaMiddleware = createSagaMiddleware();
 const reHydrateStore = () => {
   if (localStorage.getItem("cars") !== null) {
     return {
-      notes: JSON.parse(localStorage.getItem("cars"))
+      cars: JSON.parse(localStorage.getItem("cars"))
     };
   }
 };

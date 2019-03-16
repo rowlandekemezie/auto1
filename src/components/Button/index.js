@@ -23,6 +23,6 @@ const Button = styled("button")`
 export default ({ label, ...props }) => <Button {...props}>{label}</Button>;
 
 Button.propTypes = {
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string,
   onClick: PropTypes.func
 };

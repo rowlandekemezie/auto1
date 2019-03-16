@@ -19,7 +19,7 @@ const NotFound = lazy(() => import("./components/NotFound"));
 const store = configureStore();
 
 // Async render
-const AsyncRender = Component => {
+const AsyncRenderFn = Component => {
   return props => (
     <Suspense
       fallback={
@@ -43,9 +43,12 @@ function App() {
       <ThemeProvider theme={colors}>
         <Router history={history}>
           <Switch>
-            <Route exact path="/" component={AsyncRender(CarsView)} />
-            <Route path="/cars/:carId" component={AsyncRender(CarDetailView)} />
-            <Route path="*" component={NotFound} />
+            <Route exact path="/" component={AsyncRenderFn(CarsView)} />
+            <Route
+              path="/cars/:carId"
+              component={AsyncRenderFn(CarDetailView)}
+            />
+            <Route path="*" component={AsyncRenderFn(NotFound)} />
           </Switch>
         </Router>
       </ThemeProvider>
