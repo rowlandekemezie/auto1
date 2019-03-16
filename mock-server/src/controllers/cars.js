@@ -41,7 +41,7 @@ function getCars(req, res) {
   }
 
   const itemsPerPage = 10;
-  console.log(page, "here");
+
   res.json({
     cars: paginate(filteredCars, itemsPerPage, Number(page || 1)),
     totalPageCount: Math.ceil(filteredCars.length / itemsPerPage)
