@@ -11,12 +11,10 @@ import colors from "./static/colors";
 import "react-placeholder/lib/reactPlaceholder.css";
 import GlobalStyles from "./static/globalStyle";
 
-// Not found page
-import NotFound from "./components/NotFound";
-
 // Lazy load components
 const CarsView = lazy(() => import("./components/Pages/Cars"));
 const CarDetailView = lazy(() => import("./components/Pages/CarDetails"));
+const NotFound = lazy(() => import("./components/NotFound"));
 
 const store = configureStore();
 
