@@ -15,7 +15,7 @@ import {
   colorActions,
   manufacturerActions
 } from "../../../redux/actions";
-import { buildQueryString } from "../../../utils";
+import { buildQueryString, initialPageNumber } from "../../../utils";
 
 const Main = styled("main")`
   flex: 1;
@@ -30,14 +30,6 @@ const Main = styled("main")`
     padding: 24px;
   }
 `;
-
-function initialPageNumber() {
-  const query = queryString.parse(window.location.search);
-  if (Number.isInteger(parseInt(query.page))) {
-    return parseInt(query.page);
-  }
-  return 1;
-}
 
 export function Cars({
   cars,

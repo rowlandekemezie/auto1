@@ -7,7 +7,7 @@ import {
   FETCH_A_CAR_FAILURE
 } from "../actions/actionTypes";
 
-const initState = {
+const initialState = {
   cars: []
 };
 
@@ -18,7 +18,7 @@ const allCarsFilter = ({ data }) => {
   };
 };
 
-export default function(state = initState, action) {
+export default function(state = initialState, action) {
   switch (action.type) {
     case FETCH_ALL_CARS:
     case FETCH_A_CAR:
@@ -34,7 +34,7 @@ export default function(state = initState, action) {
       return {
         ...state,
         selectedCar: action.data,
-        loading: false
+        isLoading: false
       };
     case FETCH_ALL_CARS_FAILURE:
     case FETCH_A_CAR_FAILURE:

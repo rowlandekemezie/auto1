@@ -66,3 +66,14 @@ export const getItemFromFavoriteCollection = ({ stockNumber } = {}) => {
 
   return collection.find(item => item.stockNumber === stockNumber);
 };
+
+/**
+ * @return {Number}
+ */
+export const initialPageNumber = () => {
+  const query = queryString.parse(window.location.search);
+  if (Number.isInteger(parseInt(query.page))) {
+    return parseInt(query.page);
+  }
+  return 1;
+};

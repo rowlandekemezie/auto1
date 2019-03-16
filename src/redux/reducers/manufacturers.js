@@ -9,7 +9,7 @@ const initState = {
 };
 
 // Filter company by name.
-const filterManufacturerByName = ({ data }) =>
+export const filterManufacturerByName = ({ data }) =>
   data.manufacturers.map(manufacturer => manufacturer.name);
 
 export default function(state = initState, action) {

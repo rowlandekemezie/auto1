@@ -1,7 +1,5 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
-import { Router } from "react-router-dom";
-import history from "history/createBrowserHistory";
 import SidebarFilter from "../../../components/Pages/Cars/SidebarFilter";
 
 describe("<SidebarFilter />", () => {
