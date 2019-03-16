@@ -1,9 +1,9 @@
 # Auto1 Group Car catalogue with seemless filtering capability.
 
-### To run locally
+### To run locally for development
 
 ```bash
-  npm dev
+  npm dev # This starts the backend and frontend concurrently.
 ```
 
 ### Run test
@@ -12,7 +12,11 @@
   npm test
 ```
 
-### `npm run build`
+### Build for production
+
+```bash
+  npm run build
+```
 
 ## Features
 
@@ -20,9 +24,9 @@
 - Pagination
 - All functional components
 - Redux-saga as redux middleware
-- Unit tests: Components, Actions, Reducers, Sagas
+- Unit tests: Components, Actions, Reducers, Sagas and store.
 - Code splitting
 - Dynamic imports
-- Prop type checking
+- Proper typechecking checking
 
-Mad with ❤️ by @rowlandekemezie.
+Made with ❤️ by @rowlandekemezie.
