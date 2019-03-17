@@ -4,6 +4,15 @@
 
 ![Auto screen](./src/static/auto1-screen.png)
 
+## Prerequisites
+
+- Clone the repository
+- Install dependencies for the mock-server
+  ```
+  cd mock-server && npm install
+  ```
+- Run `yarn install` in the root directory to install client dependencies
+
 ### To run locally for development
 
 ```bash
@@ -28,7 +37,7 @@
 - Pagination
 - All functional components
 - Redux-saga as redux middleware
-- Use React Hooks
+- Use React Hooks and only function components
 - CSS-in-JSS for styling.
 - Unit tests: Components, Actions, Reducers, Sagas and store
 - Code splitting
