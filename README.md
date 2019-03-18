@@ -1,4 +1,4 @@
-# Auto1 Group Car catalogue with seemless filtering capability.
+# Auto1 Group Car catalogue with seamless filtering capability.
 
 [![CircleCI](https://circleci.com/gh/rowlandekemezie/auto1/tree/master.svg?style=shield&circle-token=d3feab8a62521ec838b8cf40179b66c0d84effab)](https://circleci.com/gh/rowlandekemezie/auto1/tree/master)
 
